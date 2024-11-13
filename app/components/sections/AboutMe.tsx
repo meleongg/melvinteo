@@ -1,5 +1,5 @@
-'use client';
-import { motion } from 'framer-motion';
+"use client";
+import { motion } from "framer-motion";
 
 export function AboutMe() {
   return (
@@ -17,12 +17,13 @@ export function AboutMe() {
           <div className="prose dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-300">
               {/* Customize your about me text */}
-              I'm a passionate developer with X years of experience in building web applications.
-              My journey in software development began with... [Your story here]
+              I&apos;m a passionate developer with X years of experience in
+              building web applications. My journey in software development
+              began with... [Your story here]
             </p>
           </div>
         </motion.div>
       </div>
     </section>
   );
-} 
+}

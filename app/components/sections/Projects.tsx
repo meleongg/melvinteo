@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 // import { GitHub, ExternalLink } from "lucide-react";
 
 const projects = [
@@ -31,9 +32,11 @@ export function Projects() {
               transition={{ delay: index * 0.2 }}
               className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg"
             >
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
+                width={800}
+                height={384}
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
