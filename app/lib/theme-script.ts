@@ -4,7 +4,7 @@ export const themeScript = `
     const storedTheme = localStorage.getItem('theme');
     // Check OS preference
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
       document.documentElement.classList.add('dark');
     } else {
