@@ -1,17 +1,17 @@
-'use client';
-import { motion } from 'framer-motion';
+"use client";
+import { motion } from "framer-motion";
 
 const tools = [
-  { name: 'React', icon: '⚛️' },
-  { name: 'TypeScript', icon: '📘' },
-  { name: 'Node.js', icon: '🟢' },
-  { name: 'Next.js', icon: '▲' },
+  { name: "React", icon: "⚛️" },
+  { name: "TypeScript", icon: "📘" },
+  { name: "Node.js", icon: "🟢" },
+  { name: "Next.js", icon: "▲" },
   // Add more tools as needed
 ];
 
 export function Tools() {
   return (
-    <section className="py-20">
+    <section id="tools" className="py-20">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-primary-light dark:text-white mb-12">
           Tools & Technologies
@@ -36,4 +36,4 @@ export function Tools() {
       </div>
     </section>
   );
-} 
+}

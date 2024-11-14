@@ -7,7 +7,12 @@ export const metadata: Metadata = {
   title: "Melvin Teo",
   description: "Melvin Teo's personal website",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+    ],
   },
   openGraph: {
     title: "Melvin Teo",
