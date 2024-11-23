@@ -9,11 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          light: "#1a365d",
-          dark: "#1a202c",
-        },
-        // Add other custom colors here
+        "primary-light": "#1a365d",
+        "primary-dark": "#1a202c",
+        "link-light": "#3b82f6",
+        "link-dark": "#60a5fa",
+        // ... other colors as needed
       },
     },
   },

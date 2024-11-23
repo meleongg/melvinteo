@@ -5,6 +5,7 @@ export const colors = {
     accent: "#537aa1", // Light blue
     background: "#ffffff",
     text: "#1a202c",
+    link: "#3b82f6", // Bright blue for links
   },
   dark: {
     primary: "#1a202c", // Midnight blue
@@ -12,5 +13,6 @@ export const colors = {
     accent: "#4a5568", // Medium grey-blue
     background: "#000000",
     text: "#ffffff",
+    link: "#60a5fa", // Light blue for links
   },
 };
