@@ -3,9 +3,24 @@ import { motion } from "framer-motion";
 
 const tools = [
   { name: "React", icon: "⚛️" },
-  { name: "TypeScript", icon: "📘" },
+  { name: "Vue", icon: "🌐" },
+  { name: "Express", icon: "🛠️" },
   { name: "Node.js", icon: "🟢" },
+  { name: "MongoDB", icon: "🍃" },
+  { name: "Git", icon: "🐙" },
   { name: "Next.js", icon: "▲" },
+  { name: "Firebase", icon: "🔥" },
+  { name: "JUnit", icon: "✅" },
+  { name: "Mockito", icon: "🧪" },
+  { name: "Bash", icon: "💻" },
+  { name: "AWS", icon: "☁️" },
+  { name: "Java", icon: "☕" },
+  { name: "JavaScript", icon: "📜" },
+  { name: "TypeScript", icon: "📘" },
+  { name: "Python", icon: "🐍" },
+  { name: "HTML/CSS", icon: "🌐" },
+  { name: "SQL", icon: "📊" },
+  { name: "C/C++", icon: "🔤" },
   // Add more tools as needed
 ];
 
@@ -24,12 +39,12 @@ export function Tools() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="text-4xl mb-4">{tool.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              <div className="text-2xl mr-2">{tool.icon}</div>
+              <span className="text-lg font-semibold text-gray-800 dark:text-white">
                 {tool.name}
-              </h3>
+              </span>
             </motion.div>
           ))}
         </div>
