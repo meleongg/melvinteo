@@ -13,6 +13,7 @@ const tools = [
   { name: "JUnit", icon: "✅" },
   { name: "Mockito", icon: "🧪" },
   { name: "Bash", icon: "💻" },
+  { name: "Docker", icon: "🐳" },
   { name: "AWS", icon: "☁️" },
   { name: "Java", icon: "☕" },
   { name: "JavaScript", icon: "📜" },
@@ -21,7 +22,6 @@ const tools = [
   { name: "HTML/CSS", icon: "🌐" },
   { name: "SQL", icon: "📊" },
   { name: "C/C++", icon: "🔤" },
-  // Add more tools as needed
 ];
 
 export function Tools() {

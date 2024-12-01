@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
-// import { GitHub, ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -63,7 +63,7 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-white"
                   >
-                    {/* <GitHub size={20} /> */}
+                    <Github size={20} />
                     <span>Code</span>
                   </a>
                   <a
@@ -72,7 +72,7 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-white"
                   >
-                    {/* <ExternalLink size={20} /> */}
+                    <ExternalLink size={20} />
                     <span>Live Demo</span>
                   </a>
                 </div>
