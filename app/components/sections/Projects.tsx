@@ -5,14 +5,23 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Project Name",
-    description: "Description of the project...",
-    technologies: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com/yourusername/project",
-    live: "https://project-demo.com",
-    image: "/path-to-image.jpg",
+    title: "expawdition",
+    description:
+      "An AI-powered trip-planning app delivering personalized itineraries that enhance user travel experiences!",
+    technologies: ["React", "Express", "Firebase", "Node.js", "Next.js"],
+    github: "https://github.com/expawdition",
+    live: undefined,
+    image: "/images/expawdition.jpg",
   },
-  // Add more projects
+  {
+    title: "liftz",
+    description:
+      "A personalized workout tracking app complete with a workout library, workout history calendar, visual plate calculator, and progress tracker.",
+    technologies: ["React", "Express", "MongoDB", "Node.js", "Next.js"],
+    github: undefined,
+    live: "https://liftz-workout-tracker.vercel.app/",
+    image: "/images/liftz.png",
+  },
 ];
 
 export function Projects() {
@@ -39,15 +48,15 @@ export function Projects() {
                 height={384}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+              <div className="p-6 grid gap-y-1 items-center min-h-96 md:min-h-0">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 h-10">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-gray-600 dark:text-gray-300 mb-4 h-20">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech) => (
+                <div className="flex flex-wrap gap-2 mb-4 h-10 place-items-center">
+                  {project.technologies.map((tech: string) => (
                     <span
                       key={tech}
                       className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm"
@@ -56,25 +65,29 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-white"
-                  >
-                    <Github size={20} />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-white"
-                  >
-                    <ExternalLink size={20} />
-                    <span>Live Demo</span>
-                  </a>
+                <div className="flex gap-4 h-10">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-white"
+                    >
+                      <Github size={20} />
+                      <span>Code</span>
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-white"
+                    >
+                      <ExternalLink size={20} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
