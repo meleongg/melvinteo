@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: "Melvin Teo's personal website",
     images: [
       {
-        url: "/meta-image.png",
+        url: "/images/meta-image.svg",
         width: 1200,
         height: 630,
         alt: "Site preview image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/meta-image.png"],
+    images: ["/images/meta-image.svg"],
   },
 };
 

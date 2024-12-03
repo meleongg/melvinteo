@@ -59,7 +59,7 @@ export function Projects() {
                   {project.technologies.map((tech: string) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm"
+                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-sm"
                     >
                       {tech}
                     </span>

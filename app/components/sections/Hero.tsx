@@ -23,7 +23,7 @@ export function Hero() {
         >
           <div className="relative w-48 h-48 md:w-56 md:h-56 overflow-hidden rounded-full border-4 border-primary-light dark:border-white">
             <Image
-              src="/profile.jpg"
+              src="/images/profile.jpg"
               alt="Profile photo"
               fill
               className="object-cover"
