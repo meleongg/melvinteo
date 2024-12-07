@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import "./globals.css";
 import { themeScript } from "./lib/theme-script";
@@ -46,6 +47,7 @@ export default function RootLayout({
         className={`${lato.className} antialiased bg-white dark:bg-gray-900 transition-colors`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
