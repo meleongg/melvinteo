@@ -18,20 +18,24 @@ export function AboutMe() {
           <div className="prose dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-300 space-y-4">
               {/* Part 1: Current Role/Identity */}
-              I&apos;m an aspiring Software Engineer with a passion for building
-              productivity and organizational tools that make a difference.
+              I&apos;m a Software Engineer passionate about crafting
+              productivity and organizational tools that simplify daily
+              workflows. Driven by a desire to create meaningful impact through
+              technology, I&apos;m equally committed to fostering an inclusive
+              and empowering tech community.
             </p>
 
             <p className="text-gray-600 dark:text-gray-300 mt-4">
               {/* Part 2: Background/Journey */}
-              Through hackathons and professional work, I&apos;ve gained
-              hands-on experience in Full-Stack Development while collaborating
-              with designers, product managers, and engineers.
+              Through internships, hackathons, and personal projects, I&apos;ve
+              gained hands-on experience in Full-Stack Development while
+              collaborating with designers, product managers, and engineers.
             </p>
 
             <p className="text-gray-600 dark:text-gray-300 mt-4">
               {/* Part 3: Personal & Goals */}
-              Outside of coding, you&apos;ll find me organizing tech events with{" "}
+              Outside of programming, you&apos;ll find me organizing tech events
+              with{" "}
               <Link
                 href="https://nwplus.io/"
                 target="_blank"
@@ -40,9 +44,8 @@ export function AboutMe() {
               >
                 nwPlus
               </Link>{" "}
-              and playing volleyball with friends. I&apos;m driven by the goal
-              of creating meaningful impact through technology while fostering
-              an inclusive tech community.
+              , looking for my next travel destination, lifting weights at the
+              gym, or playing volleyball with friends!
             </p>
           </div>
         </motion.div>

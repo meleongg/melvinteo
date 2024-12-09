@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "expawdition",
+    title: "🏆 expawdition",
     description:
-      "An AI-powered trip-planning app delivering personalized itineraries that enhance user travel experiences!",
+      "An AI-powered trip-planning app delivering personalized itineraries that enhance user travel experiences. Awarded 1st place at Simon Fraser University Stormhacks 2023.",
     technologies: ["React", "Express", "Firebase", "Node.js", "Next.js"],
     github: "https://github.com/expawdition",
     live: undefined,
