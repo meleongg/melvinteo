@@ -22,6 +22,15 @@ const projects = [
     live: "https://liftz-workout-tracker.vercel.app/",
     image: "/images/liftz.png",
   },
+  {
+    title: "phreview",
+    description:
+      "A Chrome extension designed to enhance foreign language proficiency through active recall, featuring customizable pop quizzes tailored to individual learning needs",
+    technologies: ["Manifest V3", "HTML", "CSS", "JS"],
+    github: undefined,
+    live: "https://chromewebstore.google.com/detail/phreview-custom-language/fmdbfblejhabdfpejeemcedelgkdoggj?hl=en",
+    image: "/images/phreview.png",
+  },
 ];
 
 export function Projects() {
