@@ -52,7 +52,7 @@ const projects = [
   {
     title: "phreview",
     description:
-      "A Chrome extension designed to enhance foreign language proficiency through active recall, featuring customizable pop quizzes tailored to individual learning needs",
+      "A Chrome extension designed to enhance foreign language proficiency through active recall, featuring customizable pop quizzes tailored to individual learning needs.",
     technologies: ["Manifest V3", "HTML", "CSS", "JS"],
     github: undefined,
     live: "https://chromewebstore.google.com/detail/phreview-custom-language/fmdbfblejhabdfpejeemcedelgkdoggj?hl=en",
