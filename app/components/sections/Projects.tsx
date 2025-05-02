@@ -26,7 +26,7 @@ const projects = [
     title: "AI News Summarizer",
     description:
       "An AI-driven news summarization and sentiment analysis tool that fetches news articles, condenses them using NLP models, and provides sentiment insights to help users stay informed at a glance.",
-    technologies: ["React", "Express", "Firebase", "Node.js", "Next.js"],
+    technologies: ["FastAPI", "Hugging Face", "NLTK", "TypeScript", "Next.js"],
     github: "https://github.com/news-summarizer-frontend",
     live: "https://news-summarizer-frontend.vercel.app/",
     image: "/images/ai-news-summarizer.png",
