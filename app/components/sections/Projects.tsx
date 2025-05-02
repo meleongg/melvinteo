@@ -5,6 +5,33 @@ import Image from "next/image";
 
 const projects = [
   {
+    title: "Fitflow",
+    description:
+      "A full-stack fitness tracking app helping users log workouts, track progress, and visualize performance trends with an intuitive and responsive UI.",
+    technologies: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
+    github: "https://github.com/fitflow",
+    live: "https://fitflow-pi.vercel.app/",
+    image: "/images/fitflow.png",
+  },
+  {
+    title: "Holistic Health Tracker",
+    description:
+      "An AI-powered health management app that helps users track both pharmaceutical and lifestyle treatments, ensuring adherence to complete treatment plans.",
+    technologies: ["Next.js", "Supabase", "Firebase", "TypeScript", "OpenAI"],
+    github: "https://github.com/holistic-health-tracker",
+    live: "https://holistic-health-tracker.vercel.app/",
+    image: "/images/holistic-health-tracker.png",
+  },
+  {
+    title: "AI News Summarizer",
+    description:
+      "An AI-driven news summarization and sentiment analysis tool that fetches news articles, condenses them using NLP models, and provides sentiment insights to help users stay informed at a glance.",
+    technologies: ["React", "Express", "Firebase", "Node.js", "Next.js"],
+    github: "https://github.com/news-summarizer-frontend",
+    live: "https://news-summarizer-frontend.vercel.app/",
+    image: "/images/ai-news-summarizer.png",
+  },
+  {
     title: "🏆 expawdition",
     description:
       "An AI-powered trip-planning app delivering personalized itineraries that enhance user travel experiences. Awarded 1st place at Simon Fraser University Stormhacks 2023.",

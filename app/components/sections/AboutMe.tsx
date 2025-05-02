@@ -20,9 +20,10 @@ export function AboutMe() {
               {/* Part 1: Current Role/Identity */}
               I&apos;m a Software Engineer passionate about crafting
               productivity and organizational tools that simplify daily
-              workflows. Driven by a desire to create meaningful impact through
-              technology, I&apos;m equally committed to fostering an inclusive
-              and empowering tech community.
+              workflows. Recently, I&apos;ve developed a growing interest in
+              natural language processing and computational linguistics,
+              exploring how language technologies can enhance user experience
+              and understanding.
             </p>
 
             <p className="text-gray-600 dark:text-gray-300 mt-4">
@@ -43,7 +44,7 @@ export function AboutMe() {
                 className="text-link-light dark:text-link-dark hover:underline font-medium"
               >
                 nwPlus
-              </Link>{" "}
+              </Link>
               , looking for my next travel destination, lifting weights at the
               gym, or playing volleyball with friends!
             </p>
