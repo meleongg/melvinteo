@@ -5,6 +5,21 @@ import Image from "next/image";
 
 const projects = [
   {
+    title: "Flashlearn",
+    description:
+      "A full-stack language learning app enabling users to create AI-generated flashcards with translations, examples, grammar notes, and Mandarin Pinyin support",
+    technologies: [
+      "Next.js",
+      "NeonDB",
+      "Tailwind CSS",
+      "TypeScript",
+      "FastAPI",
+    ],
+    github: "https://github.com/meleongg/flashcard-frontend",
+    live: "https://flashcard-frontend-one.vercel.app/",
+    image: "/images/flashlearn.png",
+  },
+  {
     title: "Fitflow",
     description:
       "A full-stack fitness tracking app helping users log workouts, track progress, and visualize performance trends with an intuitive and responsive UI.",
@@ -30,6 +45,15 @@ const projects = [
     github: "https://github.com/news-summarizer-frontend",
     live: "https://news-summarizer-frontend.vercel.app/",
     image: "/images/ai-news-summarizer.png",
+  },
+  {
+    title: "HackerHare",
+    description:
+      "A Chrome extension that deliberately hinders form filling (e.g., enforcing calendar-only date selection) to slow down sensitive data entry and promote user mindfulness",
+    technologies: ["Chrome Manifest V3", "HTML", "CSS"],
+    github: "https://github.com/DonaldKLee/Stormhacks-2024",
+    live: "https://stormhacks-2024-site.vercel.app/",
+    image: "/images/hackerhare.png",
   },
   {
     title: "🏆 expawdition",
