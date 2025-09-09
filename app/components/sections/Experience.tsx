@@ -1,26 +1,64 @@
 "use client";
 import { motion } from "framer-motion";
 
-const experiences = [
+interface Experience {
+  company: string;
+  position: string;
+  period: string;
+  description: string | string[];
+}
+
+const experiences: Experience[] = [
   {
-    company: "Amazon",
-    position: "Software Engineering Intern",
-    period: "May - August 2024",
-    description:
-      "Built a new React application managing millions of Prime customer states.",
+    company: "Amazon Payments",
+    position: "Software Engineer Intern",
+    period: "May - Aug. 2025",
+    description: [
+      "Engineered a CloudWatch MCP Server in TypeScript for internal teams to automate workflows with AI agents",
+      "Accelerated integration test generation by 90% by leveraging CloudWatch service logs, AI agents, and MCP servers",
+      "Automated CloudWatch metrics comparison with a hybrid shell script and agentic AI workflow with MCP servers",
+    ],
   },
   {
-    company: "Amazon",
-    position: "Software Engineering Intern",
-    period: "May - August 2023",
-    description: "Streamlined the Amazon Prime account cancellation pipeline.",
+    company:
+      "nwPlus - Organizers of the largest hackathons in Western Canada (HackCamp, nwHacks, cmd-f)",
+    position: "Co-President, Software Development Director, Logistics Director",
+    period: "May 2022 - May 2025",
+    description: [
+      "Led 55-member team to organize 3 major hackathons, welcoming 1,150+ participants and 79 sponsors",
+      "Managed 6-engineer team shipping 8 projects supporting 1,700+ users",
+      "Spearheaded the largest beginner-friendly hackathon in Western Canada, attracting 100+ first-time hackers",
+    ],
   },
   {
-    company: "Amazon",
-    position: "Future Engineer Intern",
-    period: "May - August 2022",
-    description:
-      "Developed Prime customer retention emails and personalized widgets.",
+    company: "Amazon Prime - Customer Engagement",
+    position: "Software Engineer Intern",
+    period: "May - Aug. 2024",
+    description: [
+      "Reduced onboarding time for PMs by 98% by building a 100% self-service customer state management web app",
+      "Implemented dynamic React forms using JSON Form Schema to populate content from DynamoDB schema",
+      "Refactored Java API controllers to adopt new DynamoDB schema and support JSON serialization",
+    ],
+  },
+  {
+    company: "Amazon Prime - Customer Retention",
+    position: "Software Engineer Intern",
+    period: "May - Aug. 2023",
+    description: [
+      "Reduced Prime membership cancellation processing time by 33% by optimizing AWS service configurations",
+      "Refactored CloudWatch dashboards and alarms in TypeScript to improve observability of cancellation traffic",
+      "Simplified QA work in A/B testing by building a browser cookie override tool in Java, saving 15 mins/test",
+    ],
+  },
+  {
+    company: "Amazon Prime - Customer Retention",
+    position: "Amazon Future Engineer Intern",
+    period: "May - Aug. 2022",
+    description: [
+      "Retained 10,000+ annual Prime customers by developing targeted retention emails and personalized widgets",
+      "Cut costs by 43% and development time by 49% by automating feature deployment with Bash shell scripts",
+      "Performed manual QA testing and data validation using customer mocking tools",
+    ],
   },
 ];
 
@@ -51,9 +89,17 @@ export function Experience() {
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
                 {exp.period}
               </p>
-              <p className="text-gray-600 dark:text-gray-300">
-                {exp.description}
-              </p>
+              <div className="text-gray-600 dark:text-gray-300">
+                {Array.isArray(exp.description) ? (
+                  <ul className="list-disc list-inside space-y-1">
+                    {exp.description.map((bullet, bulletIndex) => (
+                      <li key={bulletIndex}>{bullet}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{exp.description}</p>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>
