@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Flashlearn",
     description:
-      "A full-stack language learning app enabling users to create AI-generated flashcards with translations, examples, grammar notes, and Mandarin Pinyin support",
+      "AI-powered language learning app with smart flashcards, translations, and personalized example sentences.",
     technologies: [
       "Next.js",
       "NeonDB",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Fitflow",
     description:
-      "A full-stack fitness tracking app helping users log workouts, track progress, and visualize performance trends with an intuitive and responsive UI.",
+      "Full-stack fitness tracker with workout logging, progress visualization, and performance analytics.",
     technologies: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
     github: "https://github.com/fitflow",
     live: "https://fitflow-pi.vercel.app/",
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Holistic Health Tracker",
     description:
-      "An AI-powered health management app that helps users track both pharmaceutical and lifestyle treatments, ensuring adherence to complete treatment plans.",
+      "AI-powered health app tracking pharmaceutical and lifestyle treatments for complete care management.",
     technologies: ["Next.js", "Supabase", "Firebase", "TypeScript", "OpenAI"],
     github: "https://github.com/holistic-health-tracker",
     live: "https://holistic-health-tracker.vercel.app/",
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "AI News Summarizer",
     description:
-      "An AI-driven news summarization and sentiment analysis tool that fetches news articles, condenses them using NLP models, and provides sentiment insights to help users stay informed at a glance.",
+      "Smart news tool using NLP models to condense articles and analyze sentiment for quick insights.",
     technologies: ["FastAPI", "Hugging Face", "NLTK", "TypeScript", "Next.js"],
     github: "https://github.com/news-summarizer-frontend",
     live: "https://news-summarizer-frontend.vercel.app/",
@@ -49,7 +49,7 @@ const projects = [
   {
     title: "HackerHare",
     description:
-      "A Chrome extension that deliberately hinders form filling (e.g., enforcing calendar-only date selection) to slow down sensitive data entry and promote user mindfulness",
+      "Chrome extension that intentionally slows form filling to promote mindful data entry habits.",
     technologies: ["Chrome Manifest V3", "HTML", "CSS"],
     github: "https://github.com/DonaldKLee/Stormhacks-2024",
     live: "https://stormhacks-2024-site.vercel.app/",
@@ -58,7 +58,7 @@ const projects = [
   {
     title: "🏆 expawdition",
     description:
-      "An AI-powered trip-planning app delivering personalized itineraries that enhance user travel experiences. Awarded 1st place at Simon Fraser University Stormhacks 2023.",
+      "AI trip planner creating personalized itineraries. 1st place winner at SFU Stormhacks 2023.",
     technologies: ["React", "Express", "Firebase", "Node.js", "Next.js"],
     github: "https://github.com/expawdition",
     live: undefined,
@@ -67,7 +67,7 @@ const projects = [
   {
     title: "liftz",
     description:
-      "A personalized workout tracking app complete with a workout library, workout history calendar, visual plate calculator, and progress tracker.",
+      "Comprehensive workout tracker with exercise library, history calendar, and plate calculator.",
     technologies: ["React", "Express", "MongoDB", "Node.js", "Next.js"],
     github: undefined,
     live: "https://liftz-workout-tracker.vercel.app/",
@@ -76,7 +76,7 @@ const projects = [
   {
     title: "phreview",
     description:
-      "A Chrome extension designed to enhance foreign language proficiency through active recall, featuring customizable pop quizzes tailored to individual learning needs.",
+      "Chrome extension enhancing language learning through customizable active recall quizzes.",
     technologies: ["Manifest V3", "HTML", "CSS", "JS"],
     github: undefined,
     live: "https://chromewebstore.google.com/detail/phreview-custom-language/fmdbfblejhabdfpejeemcedelgkdoggj?hl=en",
@@ -108,7 +108,7 @@ export function Projects() {
                 height={384}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6 grid gap-y-1 items-center min-h-96 md:min-h-0">
+              <div className="p-6 grid gap-y-2 md:gap-y-1 items-center min-h-96 md:min-h-0">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 h-10">
                   {project.title}
                 </h3>
