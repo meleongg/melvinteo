@@ -147,7 +147,7 @@ export function Tools() {
                     transition={{
                       delay: categoryIndex * 0.2 + toolIndex * 0.05,
                     }}
-                    className="group relative flex items-center justify-center p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-110"
+                    className="group relative flex items-center justify-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-110"
                   >
                     <Image
                       src={tool.logo}
